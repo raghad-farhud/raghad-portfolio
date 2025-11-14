@@ -28,7 +28,7 @@ export default function Contact() {
     {
       icon: MapPin,
       label: "Location",
-      value: "Dammam, Saudi Arabia",
+      value: "Rabigh, Jeddah, Saudi Arabia",
       link: null,
       color: "from-purple-500 to-secondary",
     },

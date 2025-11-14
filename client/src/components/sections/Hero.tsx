@@ -89,16 +89,16 @@ export default function Hero() {
               {/* Profile image */}
               <div className="relative retro-border rounded-3xl overflow-hidden bg-card p-2">
                 <img
-                  src="/profile.png"
+                  src="/heroimage.png"
                   alt="Raghad Farhud"
                   className="w-full max-w-md rounded-2xl"
                 />
               </div>
 
               {/* Floating DevSpace graphics */}
-              <div className="absolute -top-8 -right-8 w-24 h-24 opacity-80 animate-bounce">
+              {/* <div className="absolute -top-8 -right-8 w-24 h-24 opacity-80 animate-bounce">
                 <img src="/devspace-graphics.png" alt="DevSpace" className="w-full h-full object-contain" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

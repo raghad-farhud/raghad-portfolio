@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Briefcase, GraduationCap, Award, FileText } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Experience() {
   const workExperience = [
@@ -26,7 +27,7 @@ export default function Experience() {
     institution: "Saudi Electronic University",
     gpa: "3.87/4",
     honors: "First-Class Honors",
-    year: "Graduating 2025",
+    year: "May 2025",
   };
 
   const certifications = [
@@ -41,6 +42,7 @@ export default function Experience() {
     title: "Arabic Sign Language Translation (ARSLT)",
     journal: "MDPI Sensors",
     year: "2025",
+    link: "https://www.mdpi.com/1424-8220/25/9/2916",
     description:
       "A peer-reviewed research project using deep learning and computer vision to translate Arabic Sign Language into text. Focused on accessibility and real-time recognition.",
   };
@@ -66,10 +68,19 @@ export default function Experience() {
             </div>
 
             {workExperience.map((job, index) => (
-              <Card
-                key={index}
-                className="p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all"
-              >
+              <div key={index} className="relative group">
+                {/* Animated background wave/light effect */}
+                <div 
+                  className="absolute -inset-0.5 rounded-lg opacity-5 group-hover:opacity-15 transition-opacity duration-500 blur-xl bg-gradient-to-r from-primary to-secondary"
+                  style={{
+                    backgroundSize: '200% 200%',
+                    animation: 'gradient-shift 8s ease infinite',
+                  }}
+                ></div>
+                
+                <Card
+                  className="relative p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all"
+                >
                 <div className="space-y-4">
                   <div className="flex flex-wrap items-start justify-between gap-4">
                     <div>
@@ -96,13 +107,14 @@ export default function Experience() {
 
                   <div className="flex flex-wrap gap-2 pt-2">
                     {job.technologies.map((tech, i) => (
-                      <Badge key={i} variant="secondary" className="bg-background/80">
+                      <Badge key={i} variant="outline" className="bg-muted/50 text-foreground hover:bg-primary/10 hover:text-primary hover:border-primary/50 transition-colors">
                         {tech}
                       </Badge>
                     ))}
                   </div>
                 </div>
               </Card>
+              </div>
             ))}
           </div>
 
@@ -175,6 +187,12 @@ export default function Experience() {
                   </p>
                 </div>
                 <p className="text-foreground/90 text-lg">{publication.description}</p>
+                <Button variant="outline" className="w-fit retro-border" asChild>
+                  <a href={publication.link} target="_blank" rel="noopener noreferrer">
+                    <FileText className="mr-2 h-4 w-4" />
+                    Read Paper
+                  </a>
+                </Button>
               </div>
             </Card>
           </div>

@@ -5,8 +5,8 @@ export default function About() {
   const highlights = [
     {
       icon: Code2,
-      title: "Frontend Excellence",
-      description: "3+ years building production-ready web applications with React, Next.js, and TypeScript",
+      title: "Full Stack Excellence",
+      description: "3+ years building production-ready web applications with React, Next.js, TypeScript, Tailwind CSS, ExpressJS, Prisma, PostgreSQL, n8n",
     },
     {
       icon: Brain,
@@ -16,12 +16,12 @@ export default function About() {
     {
       icon: Rocket,
       title: "Startup Experience",
-      description: "Leading frontend architecture at Flawless, a mentorship and career-building platform",
+      description: "Leading full stack development at Flawless, a mentorship and career-building platform",
     },
     {
       icon: BookOpen,
-      title: "Content Creator",
-      description: "Sharing tech knowledge and programming insights through DevSpace",
+      title: "Automation Expert",
+      description: "Automated workflows using n8n, Zapier, Webhooks, API Integration",
     },
   ];
 
@@ -44,12 +44,12 @@ export default function About() {
             <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50">
               <div className="space-y-4 text-lg leading-relaxed">
                 <p>
-                  <span className="font-bold text-primary">Raghad Farhud</span> is a frontend developer with{" "}
+                  <span className="font-bold text-primary">Raghad Farhud</span> is a full stack developer with{" "}
                   <span className="font-semibold">3+ years of experience</span> building clean, scalable, and
                   production-ready web applications. She currently works at{" "}
-                  <span className="font-semibold text-secondary">Flawless</span>, where she leads the frontend
-                  architecture for the company's mentorship and career-building platform using React, Next.js,
-                  TypeScript, TailwindCSS, ShadCN UI, and Prisma.
+                  <span className="font-semibold text-secondary">Flawless</span>, where she leads the full stack
+                  development for the company's mentorship and career-building platform using React, Next.js,
+                  TypeScript, TailwindCSS, ShadCN UI, ExpressJS, Prisma, PostgreSQL, and n8n.
                 </p>
                 <p>
                   She specializes in{" "}
@@ -64,9 +64,7 @@ export default function About() {
                   computer vision to build accessibility-focused solutions.
                 </p>
                 <p>
-                  She's based in <span className="font-semibold">Saudi Arabia</span>, loves reading, and creates
-                  content at <span className="font-semibold text-primary">DevSpace</span> around tech, personal growth,
-                  and programming.
+                  She's based in <span className="font-semibold">Saudi Arabia</span>, loves reading, and exploring new technologies, and building new projects that solves real problems.
                 </p>
               </div>
             </Card>

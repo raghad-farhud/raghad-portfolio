@@ -23,7 +23,7 @@ export default function Projects() {
       ],
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "n8n"],
       links: {
-        live: "https://flawless.com",
+        live: "https://weflawless.co",
       },
       gradient: "from-primary to-pink-600",
     },
@@ -44,7 +44,7 @@ export default function Projects() {
       ],
       technologies: ["Python", "TensorFlow", "Keras", "MediaPipe", "Computer Vision", "Deep Learning"],
       links: {
-        paper: "https://www.mdpi.com/sensors",
+        paper: "https://www.mdpi.com/1424-8220/25/9/2916",
         github: "https://github.com/raghad-farhud/arslt",
       },
       gradient: "from-secondary to-purple-600",
@@ -53,20 +53,20 @@ export default function Projects() {
       title: "DevSpace",
       category: "Content Platform",
       description:
-        "Personal brand and content platform focused on tech articles, programming tips, book recommendations, and UI concept designs.",
+        "Personal brand and content platform focused on tech articles, programming tips, book recommendations, and UI concept designs, built on 2023, now is inactive, but still available to view the website.",
       role: [
         "Created engaging tech content and tutorials",
         "Designed UI concepts with retro-tech aesthetic",
         "Built community around programming and personal development",
       ],
       achievements: [
-        "Growing audience on social media",
-        "Consistent content creation schedule",
+        "Built a blog system with admin dashboard",
+        "Built a newsletter system with email marketing",
         "Unique visual brand identity",
       ],
-      technologies: ["Content Creation", "UI/UX Design", "Social Media", "Community Building"],
+      technologies: ["Vue.js", "Tailwind CSS", "Firebase"],
       links: {
-        live: "https://devspace.com",
+        live: "https://devspace-blog.web.app",
       },
       gradient: "from-pink-500 to-primary",
     },
@@ -93,10 +93,19 @@ export default function Projects() {
 
         <div className="space-y-8">
           {projects.map((project, index) => (
-            <Card
-              key={index}
-              className="p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/10"
-            >
+            <div key={index} className="relative group">
+              {/* Animated background wave/light effect */}
+              <div 
+                className={`absolute -inset-0.5 rounded-lg opacity-5 group-hover:opacity-15 transition-opacity duration-500 blur-xl bg-gradient-to-r ${project.gradient}`}
+                style={{
+                  backgroundSize: '200% 200%',
+                  animation: 'gradient-shift 8s ease infinite',
+                }}
+              ></div>
+              
+              <Card
+                className="relative p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/10"
+              >
               <div className="grid lg:grid-cols-3 gap-8">
                 {/* Left side - Title and description */}
                 <div className="lg:col-span-2 space-y-6">
@@ -179,6 +188,7 @@ export default function Projects() {
                 </div>
               </div>
             </Card>
+            </div>
           ))}
         </div>
       </div>

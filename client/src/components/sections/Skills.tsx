@@ -72,8 +72,8 @@ export default function Skills() {
                   {category.skills.map((skill, skillIndex) => (
                     <Badge
                       key={skillIndex}
-                      variant="secondary"
-                      className="px-3 py-1 text-sm font-medium bg-background/80 hover:bg-primary/10 hover:text-primary transition-colors"
+                      variant="outline"
+                      className="px-3 py-1 text-sm font-medium bg-muted/50 text-foreground hover:bg-primary/10 hover:text-primary hover:border-primary/50 transition-colors"
                     >
                       {skill}
                     </Badge>

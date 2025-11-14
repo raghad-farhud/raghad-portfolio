@@ -28,7 +28,7 @@ export default function Hero() {
                 </span>
               </h1>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground/90">
-                Frontend Engineer · Web Developer
+                Fullstack Engineer · Web Developer
               </h2>
             </div>
 
@@ -36,7 +36,11 @@ export default function Hero() {
               Building scalable, clean, and modern web apps using{" "}
               <span className="text-primary font-semibold">React</span>,{" "}
               <span className="text-primary font-semibold">Next.js</span>,{" "}
-              <span className="text-primary font-semibold">TypeScript</span> — with a growing edge in{" "}
+              <span className="text-primary font-semibold">TypeScript</span>,{" "}
+              <span className="text-primary font-semibold">ExpressJS</span>,{" "}
+              <span className="text-primary font-semibold">Prisma</span>,{" "}
+              <span className="text-primary font-semibold">PostgreSQL</span>,{" "}
+              <span className="text-primary font-semibold">n8n</span> — with a growing edge in{" "}
               <span className="text-secondary font-semibold">AI</span>.
             </p>
 

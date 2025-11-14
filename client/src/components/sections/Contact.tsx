@@ -49,7 +49,7 @@ export default function Contact() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
           <p className="text-muted-foreground mt-4 text-lg max-w-2xl mx-auto">
-            Open to frontend engineering roles, AI-driven product teams, or freelance web development projects
+            Open to fullstack engineering roles, AI-driven product teams, or freelance web development projects
           </p>
         </div>
 

@@ -45,6 +45,12 @@ export default defineConfig({
       "@shared": path.resolve(import.meta.dirname, "shared"),
       "@assets": path.resolve(import.meta.dirname, "attached_assets"),
     },
+    dedupe: ["react", "react-dom"],
+  },
+  optimizeDeps: {
+    // Prevent Vite from pre-bundling remotion packages with their own React copy.
+    // Combined with resolve.dedupe this ensures a single React instance at runtime.
+    exclude: ["remotion", "@remotion/player"],
   },
   envDir: path.resolve(import.meta.dirname),
   root: path.resolve(import.meta.dirname, "client"),
